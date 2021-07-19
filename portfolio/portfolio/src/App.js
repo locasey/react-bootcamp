@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-    constructor() {
+    state = { displayBio: false };
+
+    /* constructor() {
         super(); //Inheritance
         this.state = { displayBio: false };
         //console.log('Component this', this);
 
         this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
 
-    }
-    toggleDisplayBio() {
+    } */
+
+    //Directly initalize method
+    toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio }); //use set state
     }
+
+    //Keep this in traditional syntax
     render() {
         return (
             <div>
