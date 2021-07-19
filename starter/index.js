@@ -1,5 +1,8 @@
-console.log('hi');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const element = React.createElement('div', null, 'React element!');
+/* console.log('hi'); */
+
+const element = React.createElement('div', null, 'React element with JSX!');
 
 ReactDOM.render(element, document.body);
